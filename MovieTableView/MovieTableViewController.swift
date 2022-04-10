@@ -9,7 +9,7 @@ import UIKit
 
 class MovieTableViewController: UITableViewController {
 
-    let movies = ["Eternals","Dune","No Time To Die","Last Night in Soho","Ron's Done Wrong","Halloween Kills","Venom","Antlers","The Addams Family 2"]
+    let movieList = MovieList(autofilled: true)
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,14 +30,14 @@ class MovieTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return movies.count
+        return movieList.movies.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "movie", for: indexPath)
 
         // Configure the cell...
-        cell.textLabel!.text = movies[indexPath.row]
+        cell.textLabel!.text = movieList.movies[indexPath.row].title
 
         return cell
     }
