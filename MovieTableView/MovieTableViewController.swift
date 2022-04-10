@@ -75,12 +75,10 @@ class MovieTableViewController: UITableViewController {
         }    
     }
 
-    /*
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
+        movieList.moveMovie(fromIndexPath: fromIndexPath, toIndexPath: to)
     }
-    */
 
     /*
     // Override to support conditional rearranging of the table view.
