@@ -50,8 +50,35 @@
                     <view key="view" contentMode="scaleToFill" id="FJ2-tG-xxE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="sC0-lJ-rn3">
+                                <rect key="frame" x="79" y="408.5" width="256" height="79"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SsC-tf-IMe">
+                                        <rect key="frame" x="0.0" y="0.0" width="256" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="256" id="9Ab-Pg-33S"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4C-xu-apn">
+                                        <rect key="frame" x="0.0" y="49" width="256" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                        <state key="normal" title="Save"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="p4C-xu-apn" firstAttribute="centerX" secondItem="sC0-lJ-rn3" secondAttribute="centerX" id="fLU-Qe-fMO"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="bLY-qv-c4M"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sC0-lJ-rn3" firstAttribute="centerY" secondItem="FJ2-tG-xxE" secondAttribute="centerY" id="SG8-QU-gVO"/>
+                            <constraint firstItem="sC0-lJ-rn3" firstAttribute="centerX" secondItem="FJ2-tG-xxE" secondAttribute="centerX" id="TgY-87-iPB"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Movie" id="7Qg-wd-uAC"/>
                 </viewController>
@@ -81,6 +108,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
