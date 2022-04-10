@@ -12,6 +12,15 @@ class AddMovieViewController: UIViewController {
     // create a property for the segue prepare function from MovieTableViewController to pass to
     var movieList: MovieList!
 
+    @IBOutlet weak var newMovieTitle: UITextField!
+    
+    @IBAction func addNewMovie(_ sender: Any) {
+        if !newMovieTitle.text!.isEmpty {
+            let newMovie = Movie(title: newMovieTitle.text!)
+            movieList.addMovie(movie: newMovie)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

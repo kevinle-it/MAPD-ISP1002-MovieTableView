@@ -66,6 +66,9 @@
                                         <rect key="frame" x="0.0" y="49" width="256" height="30"/>
                                         <color key="backgroundColor" systemColor="systemGray3Color"/>
                                         <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="addNewMovie:" destination="6xM-ze-3yG" eventType="touchUpInside" id="ThY-UY-xfR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -81,6 +84,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Movie" id="7Qg-wd-uAC"/>
+                    <connections>
+                        <outlet property="newMovieTitle" destination="SsC-tf-IMe" id="xuH-ug-R56"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A31-tJ-6X5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
