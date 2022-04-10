@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Movie Table View Controller-->
+        <!--Movies-->
         <scene sceneID="eEl-AP-eD1">
             <objects>
                 <tableViewController id="ted-d6-Qcz" customClass="MovieTableViewController" customModule="MovieTableView" customModuleProvider="target" sceneMemberID="viewController">
@@ -30,7 +30,7 @@
                             <outlet property="delegate" destination="ted-d6-Qcz" id="zu5-9O-WDM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="HCx-61-Cu6"/>
+                    <navigationItem key="navigationItem" title="Movies" id="HCx-61-Cu6"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eUS-w7-1rP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
