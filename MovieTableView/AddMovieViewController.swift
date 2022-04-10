@@ -8,6 +8,9 @@
 import UIKit
 
 class AddMovieViewController: UIViewController {
+    
+    // create a property for the segue prepare function from MovieTableViewController to pass to
+    var movieList: MovieList!
 
     override func viewDidLoad() {
         super.viewDidLoad()
