@@ -43,7 +43,7 @@
             </objects>
             <point key="canvasLocation" x="405.79710144927537" y="16.741071428571427"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Movie-->
         <scene sceneID="sKm-Bx-R6t">
             <objects>
                 <viewController id="6xM-ze-3yG" sceneMemberID="viewController">
@@ -53,7 +53,7 @@
                         <viewLayoutGuide key="safeArea" id="bLY-qv-c4M"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="7Qg-wd-uAC"/>
+                    <navigationItem key="navigationItem" title="Add Movie" id="7Qg-wd-uAC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A31-tJ-6X5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
