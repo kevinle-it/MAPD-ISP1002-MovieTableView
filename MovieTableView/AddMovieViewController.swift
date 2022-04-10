@@ -12,12 +12,16 @@ class AddMovieViewController: UIViewController {
     // create a property for the segue prepare function from MovieTableViewController to pass to
     var movieList: MovieList!
 
+    // Text field for entering new movie title to add
     @IBOutlet weak var newMovieTitle: UITextField!
-    
+
+    // Handle clicking Save button
     @IBAction func addNewMovie(_ sender: Any) {
+        // Only add movie if title is not empty
         if !newMovieTitle.text!.isEmpty {
             let newMovie = Movie(title: newMovieTitle.text!)
             movieList.addMovie(movie: newMovie)
+            // Go back to Movie Table View scene
             self.navigationController?.popViewController(animated: true)
         }
     }

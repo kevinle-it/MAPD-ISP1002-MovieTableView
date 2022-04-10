@@ -9,15 +9,17 @@ import UIKit
 
 class MovieTableViewController: UITableViewController {
 
+    // The movie list data showing on UI
     let movieList = MovieList(autofilled: true)
-        
+
+    // Toggle edit mode on clicking edit button on navigation bar
     @IBAction func toggleEditMode(_ sender: UIBarButtonItem) {
         if isEditing {
             setEditing(false, animated: true)
-            sender.title = "Edit"
+            sender.title = "Edit"   // reset button title to edit when done editing
         } else {
             setEditing(true, animated: true)
-            sender.title = "Done"
+            sender.title = "Done"   // change button title to done when user click to enter edit mode
         }
     }
     
@@ -31,6 +33,7 @@ class MovieTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
+    // Reload table view data after go back from add movie scene to this scene to show newly added movie (if any)
     override func viewWillAppear(_ animated: Bool) {
         tableView.reloadData()
     }

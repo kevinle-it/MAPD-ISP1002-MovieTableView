@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Movie List Model to handle multiple operations on a movie list such as: Add, Remove, or Change Position in the list
 class MovieList {
     var movies: [Movie] = []
     
@@ -22,14 +23,17 @@ class MovieList {
         }
     }
     
+    // Add new movie
     func addMovie(movie: Movie) {
         movies.append(movie)
     }
     
+    // Remove existing movie
     func removeMovie(indexPath: IndexPath) {
         movies.remove(at: indexPath.row)
     }
     
+    // Change position of a movie item in the movie list
     func moveMovie(fromIndexPath: IndexPath, toIndexPath: IndexPath) {
         let temp = movies[fromIndexPath.row]
         removeMovie(indexPath: fromIndexPath)

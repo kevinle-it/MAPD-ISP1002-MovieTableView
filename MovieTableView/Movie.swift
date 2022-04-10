@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Movie Data Model
 class Movie {
     var title: String
     
