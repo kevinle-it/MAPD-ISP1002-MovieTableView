@@ -32,6 +32,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Movies" id="HCx-61-Cu6">
+                        <barButtonItem key="leftBarButtonItem" title="Edit" id="RCp-PP-NMP">
+                            <connections>
+                                <action selector="toggleEditMode:" destination="ted-d6-Qcz" id="6t4-UY-3dQ"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Fxd-WY-7MF">
                             <connections>
                                 <segue destination="6xM-ze-3yG" kind="show" id="MSg-83-SM1"/>

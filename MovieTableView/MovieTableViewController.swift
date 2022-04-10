@@ -11,6 +11,9 @@ class MovieTableViewController: UITableViewController {
 
     let movieList = MovieList(autofilled: true)
         
+    @IBAction func toggleEditMode(_ sender: Any) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
