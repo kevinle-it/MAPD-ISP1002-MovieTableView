@@ -11,7 +11,14 @@ class MovieTableViewController: UITableViewController {
 
     let movieList = MovieList(autofilled: true)
         
-    @IBAction func toggleEditMode(_ sender: Any) {
+    @IBAction func toggleEditMode(_ sender: UIBarButtonItem) {
+        if isEditing {
+            setEditing(false, animated: true)
+            sender.title = "Edit"
+        } else {
+            setEditing(true, animated: true)
+            sender.title = "Done"
+        }
     }
     
     override func viewDidLoad() {
