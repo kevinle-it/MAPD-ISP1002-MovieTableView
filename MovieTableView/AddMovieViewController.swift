@@ -18,6 +18,7 @@ class AddMovieViewController: UIViewController {
         if !newMovieTitle.text!.isEmpty {
             let newMovie = Movie(title: newMovieTitle.text!)
             movieList.addMovie(movie: newMovie)
+            self.navigationController?.popViewController(animated: true)
         }
     }
     
