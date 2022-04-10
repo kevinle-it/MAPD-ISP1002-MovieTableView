@@ -32,7 +32,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Movies" id="HCx-61-Cu6">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Fxd-WY-7MF"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Fxd-WY-7MF">
+                            <connections>
+                                <segue destination="6xM-ze-3yG" kind="show" id="MSg-83-SM1"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eUS-w7-1rP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -49,6 +53,7 @@
                         <viewLayoutGuide key="safeArea" id="bLY-qv-c4M"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="7Qg-wd-uAC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A31-tJ-6X5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
