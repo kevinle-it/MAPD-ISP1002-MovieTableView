@@ -46,7 +46,7 @@
         <!--Add Movie-->
         <scene sceneID="sKm-Bx-R6t">
             <objects>
-                <viewController id="6xM-ze-3yG" sceneMemberID="viewController">
+                <viewController id="6xM-ze-3yG" customClass="AddMovieViewController" customModule="MovieTableView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FJ2-tG-xxE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
